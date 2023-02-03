@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | The Fork</title>
+        <meta name="description" content="Indulge in refined cuisine with breathtaking lake views. The Fork is the restaurant you need to go once.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./images/icon.png">
+
+        <!-- ------------------------------- DISCORD ------------------------------- -->
+        <meta content="Home | The Fork" property="og:title">
+        <meta content="Indulge in refined cuisine with breathtaking lake views. The Fork is the restaurant you need to go once." property="og:description">
+        <meta content="https://boehi.xyz/projects/01_thefork" property="og:url">
+        <meta content="https://boehi.xyz/projects/01_thefork/images/skylounge.jpg" property="og:image">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta content="#FFFFFF" data-react-helmet="true" name="theme-color">
+
+        <link rel="stylesheet" href="./stylesheet/style.css">
+
+        <!-- --------------------------- Font Basic Sans / BigMoore --------------------------- -->
+        <link rel="stylesheet" href="https://use.typekit.net/npp6ntg.css">
+
+        <!-- ---------------------------- Font Awesome ----------------------------- -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav>
+                <div class="menu-title">
+                    <a href="#">The Fork</a>
+                    <!--<p id="underline">-</p>-->
+                </div>
+                <div>
+                    <div class="menu-btn" onclick="openBurgerMenu()" data-state="burger" id="burgerMenuButton">
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                    </div>
+                    <ul class="nav-menu burger-nav-menu" data-state="close" id="menuLinks">
+                        <li><a href="#" id="active">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" id="reserve-now-button">Reserve now</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <hero>
+                <div id="hero-container">
+                    <div>
+                        <h1>Indulge in refined cuisine with breathtaking lake views.</h1>
+                    </div>
+                    <a class="hero-button" href="#"> 
+                        <p>Reserve a table now</p>
+                    </a>
+                </div>
+                
+            </hero>
+        </header>
+
+        <!-- -------------------- Tronc principale du site web -------------------- -->
+        <div class="main-container">
+            <!-- ------------ Première section avec les 3 premiers articles ------------ -->
+            <section>
+                <!-- --------------------------- Premier article --------------------------- -->
+                <article id="first-article"> 
+                    <div id="first-article-img-container">
+                        <img src="./images/kitchen.jpg" alt="Kitchen">
+                    </div>
+                    <div id="first-article-text">
+                        <div>
+                            <h3>Savor the finest flavors at our lakeside oasis of indulgence</h3>
+                        </div>
+                        <a class="article-button" href=""> 
+                            <p>Menu</p>
+                        </a>
+                    </div>
+                        
+                </article>
+
+                <!-- -------------------------- Deuxième article --------------------------- -->
+                <article id="second-article">
+                    <div id="second-article-stars">
+                        <p>★</p>
+                        <p>★</p>
+                        <p>★</p>
+                        <p>★</p>
+                    </div>
+                    <span>" Welcome to The Fork restaurant, located on the shores of The Leman in Switzerland. Enjoy breathtaking views while savoring refined dishes and top-quality wines prepared by our talented and passionate team of chefs. Book a table now and discover why The Fork is considered one of the best restaurants in the region. "</span>
+                </article>
+                
+                <!-- -------------------------- Troisième article -------------------------- -->
+                <article id="third-article">
+                    <div id="third-article-img-container">
+                        <img src="./images/skylounge.jpg" alt="Skylounge">
+                    </div>
+                    <div id="third-article-text">
+                        <div>
+                            <h3>Savor the finest flavors at our lakeside oasis of indulgence</h3>
+                        </div>
+                        <a class="article-button" href="#"> 
+                            <p>Galery</p>
+                        </a> 
+                    </div>
+                    
+                </article>
+            </section>
+                
+            <!-- ------- Deuxième section avec les informations supplémentaires -------- -->
+            <section id="section-autres">
+
+                <!-- -------- N'est pas sous forme d'article, les reviews le seront -------- -->
+                <div id="review-container">
+                    <h2>Reviews</h2>
+                    <div class="reviews-block">
+                        <div class="review-container-unique">
+                            <div class="review-profile-picture">
+                                <img src="./images/reviews/man1.jpg" alt="Marc">
+                            </div>
+                            <div class="review-text-container">
+                                <p>Marc D.</p>
+                                <p>“I came here with my girlfriend for her birthday and it was the best dinner I ever had.”</p>
+                            </div>
+                            <p class="review-note">5</p>
+                        </div>
+                        <div class="review-container-unique">
+                            <div class="review-profile-picture">
+                                <img src="./images/reviews/woman1.jpg" alt="Delphine">
+                            </div>
+                            <div class="review-text-container">
+                                <p>Delphine G.</p>
+                                <p>“The view is beautiful, I recommend everyone to come at dusk to see the sun disapear behing Geneva.”</p>
+                            </div>
+                            <p class="review-note">4.2</p>
+                        </div>
+                        <div class="review-container-unique">
+                            <div class="review-profile-picture">
+                                <img src="./images/reviews/man2.jpg" alt="François">
+                            </div>
+                            <div class="review-text-container">
+                                <p>François J.</p>
+                                <p>“The food was very good, we took the Patate sur son lit de patates confites au beurre, it was a discovery for me.”</p>
+                            </div>
+                            <p class="review-note">4.8</p>
+                        </div>
+                        <div class="review-container-unique">
+                            <div class="review-profile-picture">
+                                <img src="./images/reviews/man3.jpg" alt="Amir">
+                            </div>
+                            <div class="review-text-container">
+                                <p>Amir A.</p>
+                                <p>“I took a salmon but they gave me it alive, found it interesting to eat like in Minecraft.”</p>
+                            </div>
+                            <p class="review-note">4.1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---------------------- Partenaire, they trust us ---------------------- -->
+                <div id="partners-container">
+                    <h2>They trust us</h2>
+                    <div id="partners-images">
+                        <img class="partner-img" src="./images/partner/swissbakers.png" alt="swissbakers">
+                        <img class="partner-img" src="./images/partner/nestle.png" alt="nestle">
+                        <img class="partner-img" src="./images/partner/gourmetfleisch.png" alt="gf">
+                    </div>
+                </div>
+
+                <!-- --------------------------- Réseaux sociaux --------------------------- -->
+                <div id="socials-container">
+                    <h2>Socials</h2>
+                    <div id="socials-links">
+                        <a href="#">
+                            <img src="./images/socials/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="./images/socials/facebook.svg" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="./images/socials/twitter.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div id="footer-container">
+                <div id="footer-link-container">
+                    <div class="footer-link">
+                        <li>
+                            <ul><a>Company</a></ul>
+                            <ul><a href="#">About Us</a></ul>
+                            <ul><a href="#">Why us</a></ul>
+                            <ul><a href="#">Pricing</a></ul>
+                            <ul><a href="#">Testimonial</a></ul>
+                        </li>
+                    </div>
+                    <div class="footer-link">
+                        <li>
+                            <ul><a>Resources</a></ul>
+                            <ul><a href="#">Privacy policy</a></ul>
+                            <ul><a href="#">Terms and Condition</a></ul>
+                            <ul><a href="#">Blog</a></ul>
+                            <ul><a href="#">Contact us</a></ul>
+                        </li>
+                    </div>
+                    <div class="footer-link">
+                        <li>
+                            <ul><a>Products</a></ul>
+                            <ul><a href="#">Giant fork</a></ul>
+                            <ul><a href="#">Time tracker</a></ul>
+                            <ul><a href="#">Collaboration</a></ul>
+                            <ul><a href="#">Fish provenance</a></ul>
+                            <ul><a href="#">Beef provenance</a></ul>
+                        </li>
+                    </div>
+                </div>
+                
+                <!-- ----------------------- Subscribe to newsletter ----------------------- -->
+                <div id="footer-subscribe">
+                    <p>The Fork</p>
+                    <p>Subscribe to our Newsletter</p>
+                    <div>
+                        <form action="#">
+                            <input type="email" id="subEmail" name="email" maxlength="30" placeholder="Enter your email"><br>
+                            <input type="submit" id="subButton" onmouseover="subButtonOver()" onmouseout="subButtonOut()" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------- Liens du footer --------------------------- -->
+            
+        </footer>
+    <script src="./js/index.js"></script>
+    </body>
+</html>
