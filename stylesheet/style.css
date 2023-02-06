@@ -558,12 +558,12 @@ form input[type="submit"]:focus{
     }
 
     .menu-btn[data-state="cross"] .btn-line:first-child{
-        transform: rotate(-0.125turn) translate(0, 15px);
+        transform: translate(15px, 11px) rotate(-0.125turn);
         /*transform: rotate(0.125turn) translate(0, 11px);*/
     }
 
     .menu-btn[data-state="cross"] .btn-line:nth-child(3){
-        transform: rotate(0.125turn) translate(0, -15px);
+        transform: translate(15px, -11px) rotate(0.125turn);
     }
 
     .menu-btn[data-state="cross"]{

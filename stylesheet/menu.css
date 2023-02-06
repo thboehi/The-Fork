@@ -65,13 +65,17 @@ article{
     overflow: hidden;
     box-sizing: border-box;
     object-position: top;
-    border-radius: 10px 10px 0 0;
+    border-radius: 6px 6px 0 0;
 }
 
 .boxImg img{
     height: 250px;
     object-fit: cover;
     object-position: center;
+    transition: transform 300ms ease-out;
+}
+.menuBoxes:hover .boxImg img{
+    transform: scale(1.05);
 }
 .boxText{
     margin-top: 10px;
@@ -85,6 +89,9 @@ article{
 
 .boxTextTitleAndSubtitle h4{
     font-size: 1.4rem;
+}
+.boxTextTitleAndSubtitle p{
+    font-style: italic;
 }
 .boxText > p{
     position: absolute;
@@ -121,82 +128,13 @@ article{
 
 @media screen and (min-width: 1024px){
 
-    #about-first-section article div p{
-        font-size: 1.2rem;
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
-
-    #gallery-container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-            "one three six height"
-            "one four six nine"
-            "two five seven nine";
-        grid-column: 1fr 1fr 1fr;
-        grid-row: 1fr 1fr 1fr;
-        margin: 70px;
-        margin-top: 200px;
-        gap: 20px;
-        height: 650px;
-        max-width: 1560px;
-    }
-
-    #gallery-container div img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: 300ms ease-in-out;
-    }
-
-    #gallery-container > div{
-        border-radius: 10px;
-        overflow: hidden;
-        transition: 300ms ease-in-out;
-    }
-
-    
-    #gallery-container > div:hover img{
-        transform: scale(1.05);
-    }
-    
-    .gallery-one{
-        grid-area: one;
-    }
-
-    .gallery-two{
-        grid-area: two;
-    }
-
-    .gallery-three{
-        grid-area: three;
-    }
-
-    .gallery-four{
-        grid-area: four;
-    }
-
-    .gallery-five{
-        grid-area: five;
-    }
-
-    .gallery-six{
-        grid-area: six;
-    }
-
-    .gallery-seven{
-        grid-area: seven;
-    }
-
-    .gallery-height{
-        grid-area: height;
-    }
-
-    .gallery-nine{
-        grid-area: nine;
-    }
-
-
 
 }
 
