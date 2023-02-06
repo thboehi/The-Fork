@@ -11,6 +11,9 @@
 *:focus {
     outline: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* ---------------------------------- FONT ---------------------------------- */
@@ -380,8 +383,8 @@ footer{
 }
 
 #footer-container{
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 30px;
     padding-top: 30px;
     height: fit-content;
@@ -687,6 +690,8 @@ form input[type="submit"]:focus{
     #footer-container{
         flex-direction: row;
         justify-content: space-between;
+        padding-left: 70px;
+        padding-right: 70px;
     }
 
 }
@@ -937,6 +942,9 @@ form input[type="submit"]:focus{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+    #footer-subscribe{
+        display: none;
     }
     
 }
