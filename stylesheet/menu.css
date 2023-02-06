@@ -11,95 +11,12 @@
 /*                                   MOBILE                                   */
 /* -------------------------------------------------------------------------- */
 
-#about-first-section{
-    margin: 20px;
-    max-width: 1560px;
-    box-sizing: border-box;
-}
-
-#about-first-section article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-top: 200px;
-}
-
-#about-first-section article div:first-child{
-    width: 100%;
-    height: fit-content;
-    overflow: hidden;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#about-first-section article div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-}
-#about-first-section article div h2{
-    font-size: 2.5rem;
-    font-family: basic-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-#about-first-section article div p{
-    font-family: basic-sans, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: justify;
-}
-
-#about-first-section article img{
-    transform: scale(1.1);
-}
-
-#gallery-container{
-    display: flex;
-    margin: 20px;
-    margin-top: 200px;
-    flex-direction: column;
-    gap: 20px;
-    overflow: hidden;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                  TABLETTE                                  */
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px){
-    #about-first-section{
-        margin: 70px;
-    }
-
-    #about-first-section article{
-        flex-direction: row;
-    }
-
-    #about-first-section article div:first-child{
-        width: 100%;
-        height: 340px;
-        overflow: hidden;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        object-fit: cover;
-    }
-
-    #about-first-section article div:first-child img{
-        height: 100%;
-        object-fit: cover;
-    }
 
     #reserve-now-button{
         background-color: #0a090818;
