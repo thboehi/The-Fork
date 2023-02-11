@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-top: 200px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
@@ -31,7 +31,7 @@
     height: fit-content;
     overflow: hidden;
     border-radius: 10px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -88,6 +88,7 @@
 
     #about-first-section article{
         flex-direction: row;
+        margin-top: 150px;
     }
 
     #about-first-section article div:first-child{

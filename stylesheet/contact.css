@@ -1,0 +1,95 @@
+/* ------------------------------ IMPORT STYLE ------------------------------ */
+
+@import url(./style.css);
+
+
+/* ---------------------------------- FONT ---------------------------------- */
+
+@import url("https://use.typekit.net/npp6ntg.css");
+
+/* -------------------------------------------------------------------------- */
+/*                                   MOBILE                                   */
+/* -------------------------------------------------------------------------- */
+
+#contact-card{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: #e7e7e7;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+#contact-card h2{
+    text-align: left;
+    margin-bottom: 50px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#contact-form div{
+    display: flex;
+    flex-direction: column;
+}
+#contact-form div label{
+    font-family: "basic-sans", sans-serif;
+}
+#contact-form div input, #contact-form div textarea{
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "basic-sans", sans-serif;
+}
+#contact-form div textarea{
+    resize: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  TABLETTE                                  */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px){
+
+
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              PETIT ORDINATEUR                              */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1024px){
+
+
+
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               MAX SIZE 1560px                              */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1560px){
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                    MINI SCREEN (YES WE THOUGH ABOUT YOU)                   */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 360px) {
+    
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    
+}

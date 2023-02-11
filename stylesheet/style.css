@@ -452,7 +452,7 @@ footer{
 }
 
 
-form input[type="email"]{
+form #subEmail{
     color: #F2F4F3;
     background-color: #0A0908;
     border: 3px solid #0A0908;
@@ -466,17 +466,17 @@ form input[type="email"]{
     box-sizing: border-box;
 }
 
-form input[type="email"]:hover{
+form #subEmail:hover{
     border: 3px solid #F2F4F3;
     border-right: none;
 }
 
-form input[type="email"]:focus{
+form #subEmail:focus{
     border: 3px solid #F2F4F3;
     border-right: none;
 }
 
-form input[type="submit"]{
+form #subButton{
     color: #0A0908;
     font-family: basic-sans, sans-serif;
     font-size: 1rem;
@@ -491,19 +491,19 @@ form input[type="submit"]{
     width: 110px;
 }
 
-form input[type="submit"]:hover{
+form #subButton:hover{
     background: #0A0908;
     color: #F2F4F3;
     border: 3px solid #0A0908;
     border-left: none;
 }
 
-form input[type="submit"][data-state="subEmailSelected"]:hover{
+form #subButton[data-state="subEmailSelected"]:hover{
     border: 3px solid #F2F4F3;
     border-left: none;
 }
 
-form input[type="submit"]:focus{
+form #subButton:focus{
     border: 3px solid #0A0908;
     border-left: none;
 }
