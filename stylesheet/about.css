@@ -12,9 +12,9 @@
 /* -------------------------------------------------------------------------- */
 
 #about-first-section{
-    margin: 20px;
-    max-width: 1560px;
+    max-width: 1000px;
     box-sizing: border-box;
+    margin: 20px;
 }
 
 #about-first-section article{
@@ -23,6 +23,7 @@
     align-items: center;
     gap: 30px;
     margin-top: 200px;
+    border-radius: 10px;
 }
 
 #about-first-section article div:first-child{
@@ -71,15 +72,19 @@
     gap: 20px;
     overflow: hidden;
 }
+#gallery-container div{
+    border-radius: 10px;
+    overflow: hidden;
+}
+#gallery-container div img{
+    transform: scale(1.1);
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  TABLETTE                                  */
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px){
-    #about-first-section{
-        margin: 70px;
-    }
 
     #about-first-section article{
         flex-direction: row;
@@ -123,6 +128,9 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1024px){
+    #about-first-section{
+        margin: 0 auto;
+    }
 
     #about-first-section article div p{
         font-size: 1.2rem;
