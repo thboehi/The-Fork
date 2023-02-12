@@ -59,6 +59,10 @@
     font-family: "basic-sans", sans-serif;
     align-self: flex-end;
 }
+#contact-form #submit:focus{
+    opacity: 0.5;
+    transform: scale(0.95);
+}
 
 #contact-address{
     font-family: "basic-sans", sans-serif;
@@ -95,7 +99,24 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1024px){
-
+    #contact-card{
+        max-width: 1000px;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    #contact-form{
+        width: 350px;
+        margin: 0;
+    }
+    #contact-address{
+        max-width: 300px;
+    }
+    #contact-maps{
+        max-width: 300px;
+    }
 
 
 }
