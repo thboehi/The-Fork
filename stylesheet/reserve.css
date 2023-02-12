@@ -1,0 +1,147 @@
+/* ------------------------------ IMPORT STYLE ------------------------------ */
+
+@import url(./style.css);
+
+
+/* ---------------------------------- FONT ---------------------------------- */
+
+@import url("https://use.typekit.net/npp6ntg.css");
+
+/* -------------------------------------------------------------------------- */
+/*                                   MOBILE                                   */
+/* -------------------------------------------------------------------------- */
+
+#contact-card{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: #e7e7e7;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+#contact-card h2{
+    text-align: left;
+    margin-bottom: 50px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+#contact-form div{
+    display: flex;
+    flex-direction: column;
+}
+#contact-form div label{
+    font-family: "basic-sans", sans-serif;
+}
+#contact-form div input, #contact-form div textarea{
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "basic-sans", sans-serif;
+}
+#contact-form div textarea{
+    resize: none;
+}
+#contact-form #submit{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #0A0908;
+    color: #fff;
+    font-family: "basic-sans", sans-serif;
+    align-self: flex-end;
+}
+#contact-form #submit:focus{
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+#contact-address{
+    font-family: "basic-sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+#contact-address p:first-of-type{
+    font-weight: 600;
+}
+
+#contact-maps{
+    overflow: hidden;
+    border-radius: 5px;
+    height: fit-content;
+    aspect-ratio: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  TABLETTE                                  */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px){
+
+
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              PETIT ORDINATEUR                              */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1024px){
+    #contact-card{
+        max-width: 1000px;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    #contact-form{
+        width: 350px;
+        margin: 0;
+    }
+    #contact-address{
+        max-width: 300px;
+    }
+    #contact-maps{
+        max-width: 300px;
+    }
+
+
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               MAX SIZE 1560px                              */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1560px){
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                    MINI SCREEN (YES WE THOUGH ABOUT YOU)                   */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 360px) {
+    
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    
+}
