@@ -219,6 +219,10 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1560px){
+    #gallery-container{
+        margin: 0 auto;
+        margin-top: 200px;
+    }
 
 }
 
