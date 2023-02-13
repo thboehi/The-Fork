@@ -15,6 +15,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.button-generic{
+    transition: box-shadow 300ms ease-out, transform 300ms ease-out;
+}
+.button-generic:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02) translate(0, -2px);
+}
+
 
 /* ---------------------------------- FONT ---------------------------------- */
 
@@ -186,8 +194,6 @@ section{
 .article-button:hover{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     transform: scale(1.02) translate(0, -2px);
-    
-
 }
 
 #first-article, #third-article{
