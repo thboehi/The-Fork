@@ -1,3 +1,3 @@
 # The-Fork
 
-This website is for a fictitious restaurant located on the stunning shores of Lake Geneva in Switzerland. With breathtaking views of the lake and surrounding mountains, this restaurant offers a unique and unforgettable dining experience. Despite being a fictional establishment, the restaurant boasts an extensive menu of classic Swiss dishes and international favorites, made with only the freshest and locally sourced ingredients. Whether you're looking for a romantic dinner for two or a celebration with friends and family, this restaurant has something for everyone. So come visit us and taste the flavors of Switzerland!
+This website is for a fictional restaurant on the shores of Lake Geneva in Switzerland, offering a unique dining experience with stunning views of the lake and mountains. The menu features classic Swiss dishes and international favorites made with fresh, locally sourced ingredients. Come visit us for a memorable meal.
