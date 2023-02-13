@@ -11,44 +11,59 @@
 /*                                   MOBILE                                   */
 /* -------------------------------------------------------------------------- */
 
-#contact-card{
+#reserve-card{
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
     background-color: #e7e7e7;
-    padding: 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
     border-radius: 10px;
     margin-top: 50px;
+    font-family: "basic-sans", sans-serif;
 }
-#contact-card h2{
-    text-align: left;
-    margin-bottom: 50px;
+#reserve-card h2{
+    text-align: center;
+    margin-bottom: 25px;
+    box-sizing: border-box;
 }
-#contact-form{
+#reserve-call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+#reserve-call-button{
+    color: #e7e7e7;
+    padding: 10px 20px;
+    background-color: #0A0908;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 25px;
+}
+#reserve-form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 50px;
 }
-#contact-form div{
+#reserve-form div{
     display: flex;
     flex-direction: column;
 }
-#contact-form div label{
+#reserve-form div label{
     font-family: "basic-sans", sans-serif;
 }
-#contact-form div input, #contact-form div textarea{
+#reserve-form div input, #reserve-form div textarea{
     outline: none;
     border: none;
     padding: 5px;
     border-radius: 5px;
     font-family: "basic-sans", sans-serif;
 }
-#contact-form div textarea{
+#reserve-form div textarea{
     resize: none;
 }
-#contact-form #submit{
+#reserve-form #submit{
     padding: 10px;
     width: 100px;
     text-align: center;
@@ -57,32 +72,57 @@
     background-color: #0A0908;
     color: #fff;
     font-family: "basic-sans", sans-serif;
-    align-self: flex-end;
+    align-self: center;
 }
-#contact-form #submit:focus{
+#reserve-form #submit:focus{
     opacity: 0.5;
     transform: scale(0.95);
 }
 
-#contact-address{
+#rooms-card{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: #e7e7e7;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 50px;
     font-family: "basic-sans", sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-weight: 300;
+    align-items: center;
+}
+#rooms-card > p{
+    max-width: 250px;
+    text-align: center;
     margin-bottom: 50px;
 }
-#contact-address p:first-of-type{
-    font-weight: 600;
-}
-
-#contact-maps{
+.rooms-room{
+    background-color: aqua;
+    position: relative;
+    aspect-ratio: 1.7 / 1;
+    width: 100%;
     overflow: hidden;
-    border-radius: 5px;
-    height: fit-content;
-    aspect-ratio: 1;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-
+.rooms-room-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.rooms-room-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #0A090850;
+    border-radius: 0 5px 0 0;
+    backdrop-filter: blur(1px);
+}
 /* -------------------------------------------------------------------------- */
 /*                                  TABLETTE                                  */
 /* -------------------------------------------------------------------------- */
@@ -99,24 +139,55 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1024px){
-    #contact-card{
-        max-width: 1000px;
+    #reserve-rooms-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    
+    #reserve-card{
+        margin: unset;
+        max-width: 400px;
         padding: 50px;
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
     }
-    #contact-form{
-        width: 350px;
+    #rooms-card > p{
+        max-width: unset;
+    }
+    #reserve-form{
+        width: 300px;
         margin: 0;
     }
-    #contact-address{
-        max-width: 300px;
+    #reserve-form div textarea{
+        height: 100px;
     }
-    #contact-maps{
-        max-width: 300px;
+    #rooms-card{
+        margin: unset;
+        max-width: 600px;
     }
+    #rooms-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .rooms-room{
+        max-width: 260px;
+        margin-bottom: unset;
+    }
+    .rooms-room-img{
+        transition: transform 300ms ease-out;
+    }
+    .rooms-room:hover .rooms-room-img{
+        transform: scale(1.05);
+    }
+
 
 
 }
