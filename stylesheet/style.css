@@ -16,6 +16,7 @@ html {
 }
 
 .button-generic{
+    cursor: pointer;
     transition: box-shadow 300ms ease-out, transform 300ms ease-out;
 }
 .button-generic:hover{
