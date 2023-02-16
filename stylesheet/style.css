@@ -51,7 +51,7 @@ body nav {
     font-weight: 400;
     font-style: normal;
     /* background-color: aquamarine; */
-    transition: 300ms ease-out;
+    transition: opacity 300ms ease-out;
 }
 
 .menu-title a{
@@ -600,7 +600,7 @@ form #subButton:focus{
         font-weight: 400;
         font-style: normal;
         color: #0a090886;
-        transition: 300ms ease-out;
+        transition: color 300ms ease-out;
     }
 
     .nav-menu:hover #active:not(:hover){
