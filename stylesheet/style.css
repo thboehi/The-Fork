@@ -13,8 +13,10 @@
 }
 html {
     scroll-behavior: smooth;
+    background-color: #F2F4F3;
 }
 
+/* Style de bouton principal */
 .button-generic{
     cursor: pointer;
     transition: box-shadow 300ms ease-out, transform 300ms ease-out;
@@ -23,6 +25,12 @@ html {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     transform: scale(1.02) translate(0, -2px);
 }
+
+/* Pour que le texte sélectionné soit noir comme la couleur du site */
+::selection {
+    background-color: #0A0908; /* Couleur de fond */
+    color: #F2F4F3; /* Couleur du texte */
+  }
 
 
 /* ---------------------------------- FONT ---------------------------------- */
@@ -74,8 +82,6 @@ body nav {
     cursor: pointer;
     padding: 0;
     z-index: 10;
-    transition: 300ms ease-in-out;
-    /*background-color: hotpink;*/
 }
 
 
@@ -84,7 +90,6 @@ body nav {
     height: 0.25rem;
     background: #0A0908;
     border-radius: 10%;
-    transition: 300ms ease-in-out;
 }
 
 .btn-line:nth-of-type(2){
@@ -446,7 +451,7 @@ footer{
     width: auto;
 }
 
-#footer-subscribe p:first-of-type{
+#footer-subscribe > p:first-of-type{
     color: #F2F4F3;
     font-weight: 600;
     font-style: normal;
@@ -514,11 +519,26 @@ form #subButton:focus{
     border: 3px solid #0A0908;
     border-left: none;
 }
+#copyright{
+    font-family: "basic-sans", sans-serif;
+    font-weight: 200;
+    color: #F2F4F3;
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 10px;
+    opacity: 0.5;
+    transition: opacity 300ms ease-out;
+}
+#copyright:hover{
+    opacity: 1;
+}
 
 
 @media screen and (max-width: 767px){
 
     html:has(.burger-nav-menu[data-state="open"]){
+        width: 100vw;
+        height: 100vh;
         overflow: hidden;
     }
 
@@ -547,34 +567,37 @@ form #subButton:focus{
         color: #0A0908;
     }
     .burger-nav-menu[data-state="close"]{
-        height: 0vh;
+        height: 0px;
     }
 
     .burger-nav-menu[data-state="open"]{
-        height: 89vh;
+        height: calc(100% - 80px);
+    }
+    .btn-line{
+        transition: translate 100ms ease-out 300ms, rotate 300ms ease-out, opacity 300ms ease-out 300ms;
+        transform-origin: center;
     }
 
     #active{
         color: #0a090870;
         font-weight: 400;
     }
+    .menu-btn[data-state="cross"] .btn-line{
+        transition: translate 100ms ease-out, rotate 300ms ease-out 300ms, opacity 0ms ease-out 300ms;
+    }
 
     .menu-btn[data-state="cross"] .btn-line:nth-child(2){
-        transform: translate(100px, 0);
-        /*display: none;*/
+        opacity: 0;
     }
 
     .menu-btn[data-state="cross"] .btn-line:first-child{
-        transform: translate(15px, 11px) rotate(-0.125turn);
-        /*transform: rotate(0.125turn) translate(0, 11px);*/
+        translate: 0 11px;
+        rotate: -45deg;
     }
 
     .menu-btn[data-state="cross"] .btn-line:nth-child(3){
-        transform: translate(15px, -11px) rotate(0.125turn);
-    }
-
-    .menu-btn[data-state="cross"]{
-        margin-right: 20px;
+        translate: 0 -11px;
+        rotate: 45deg;
     }
     
 
@@ -629,12 +652,14 @@ form #subButton:focus{
         padding: 10px 20px 10px 20px;
         border-radius: 10px;
         color: #0A0908;
+        transition: background-color 300ms ease-out, color 300ms ease-out;
     }
 
     #reserve-now-button:hover {
         background-color: #0A0908;
         color: #F2F4F3;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        transform: scale(1.02) translate(0, -2px);
     }
 
     .nav-menu li:last-child:hover{
