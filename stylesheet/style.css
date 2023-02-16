@@ -115,7 +115,7 @@ hero{
 
 hero #hero-container{
     display: flex;
-    height: 80vh;
+    height: calc(100vh - 100px);
     padding: 20px;
     gap: 30px;
     align-items: center;
