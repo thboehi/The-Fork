@@ -11,63 +11,40 @@
 /*                                   MOBILE                                   */
 /* -------------------------------------------------------------------------- */
 
-#about-first-section{
-    max-width: 1000px;
-    box-sizing: border-box;
+#about-story-container{
+    display: flex;
+    flex-direction: column;
     margin: 20px;
+    margin-top: 100px;
 }
-
-#about-first-section article{
+#about-short{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-#about-first-section article div:first-child{
-    width: 100%;
-    height: fit-content;
-    overflow: hidden;
-    border-radius: 10px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#about-first-section article div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
     gap: 10px;
 }
-#about-first-section article div h2{
-    font-size: 2.5rem;
-    font-family: basic-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+#about-short h2, #about-long h2{
+    text-align: left;
 }
+#about-short h2:after{
+    content: "Short about us";
 
-#about-first-section article div p{
-    font-family: basic-sans, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: justify;
 }
-
-#about-first-section article img{
-    transform: scale(1.1);
+#about-short p, #about-long p{
+    font-family: "basic-sans", sans-serif;
+}
+#about-short a{
+    font-family: "basic-sans", sans-serif;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #0A0908;
+    color: #F2F4F3;
 }
 
 #gallery-container{
     display: flex;
     margin: 20px;
-    margin-top: 200px;
+    margin-top: 100px;
     flex-direction: column;
     gap: 20px;
     overflow: hidden;
@@ -79,6 +56,47 @@
 #gallery-container div img{
     transform: scale(1.1);
 }
+@media screen and (max-width: 768px) {
+    #about-long{
+        position: absolute;
+        z-index: 100;
+        top: 100px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: fit-content;
+        background-color: #F2F4F3;
+        border-radius: 5px;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
+        transform: scale(0.9);
+        opacity: 0;
+        transform-origin: center;
+        transition: transform 300ms ease-out, opacity 150ms ease-out;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        pointer-events: none;
+    }
+    #about-long[data-state="open"]{
+        transform: scale(1);
+        opacity: 1;
+    }
+    #about-long-close{
+        font-family: "basic-sans", sans-serif;
+        width: fit-content;
+        padding: 5px 20px;
+        border-radius: 5px;
+        background-color: #0A0908;
+        color: #F2F4F3;
+        align-self: flex-end;
+        pointer-events: all;
+        margin-top: 20px;
+    }
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  TABLETTE                                  */
@@ -86,41 +104,29 @@
 
 @media screen and (min-width: 768px){
 
-    #about-first-section article{
-        flex-direction: row;
-        margin-top: 150px;
+    #about-story-container{
+        margin: 70px;
+        margin-top: 100px;
     }
-
-    #about-first-section article div:first-child{
-        width: 100%;
-        height: 340px;
-        overflow: hidden;
-        border-radius: 10px;
+    #about-long-close{
+        display: none;
+    }
+    #about-short a{
+        display: none;
+    }
+    #about-long{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        object-fit: cover;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 100px;
     }
-
-    #about-first-section article div:first-child img{
-        height: 100%;
-        object-fit: cover;
-    }
-
-    #reserve-now-button{
-        background-color: #0a090818;
-        padding: 10px 20px 10px 20px;
-        border-radius: 10px;
-        color: #0A0908;
-    }
-
-    #reserve-now-button:hover {
-        background-color: #0A0908;
-        color: #F2F4F3;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    #gallery-container{
+        margin: 70px;
+        margin-top: 100px;
     }
 
 }
+
 
 
 
@@ -129,12 +135,19 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 1024px){
-    #about-first-section{
-        margin: 0 auto;
+    #about-story-container{
+        margin: 70px;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
     }
-
-    #about-first-section article div p{
-        font-size: 1.2rem;
+    #about-short, #about-long{
+        max-width: 500px;
+    }
+    
+    #about-long p{
+        font-family: "basic-sans", sans-serif;
     }
 
     #gallery-container{
@@ -147,8 +160,6 @@
             "two five seven nine";
         grid-column: 1fr 1fr 1fr;
         grid-row: 1fr 1fr 1fr;
-        margin: 70px;
-        margin-top: 200px;
         gap: 20px;
         height: 650px;
         max-width: 1560px;
@@ -169,7 +180,7 @@
 
     
     #gallery-container > div:hover img{
-        transform: scale(1.05);
+        transform: scale(1.15);
     }
     
     .gallery-one{
@@ -221,22 +232,7 @@
 @media screen and (min-width: 1560px){
     #gallery-container{
         margin: 0 auto;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
-}
-
-
-/* -------------------------------------------------------------------------- */
-/*                    MINI SCREEN (YES WE THOUGH ABOUT YOU)                   */
-/* -------------------------------------------------------------------------- */
-
-@media screen and (max-width: 360px) {
-    
-    
-}
-
-@media screen and (max-width: 320px) {
-
-    
 }

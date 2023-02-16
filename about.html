@@ -50,26 +50,24 @@
                 </div>
             </nav>
         </header>
-        <section id="about-first-section">
-            <article>
-                <div>
-                    <img src="./images/vintage_restaurant.jpg" alt="Le Bar">
-                </div>
-                <div>
-                    <h2>Our Story</h2>
-                    <p>The lakeside restaurant in Vevey is a renowned establishment that has stood since 1962. Over the years, it has earned a reputation for its refined cuisine and breathtaking views of Lake Geneva. The restaurant is distinguished by its inventive menu, which changes with the seasons, and its exceptional wine cellar. The staff is welcoming and professional, and the atmosphere is warm and elegant. For over 50 years, this restaurant has been a must-visit for food connoisseurs and lovers of beautiful scenery, and is known for its upscale and luxurious dining experience.</p>
-                </div>
+        <section id="about-story-container">
+            <article id="about-short">
+                <h2></h2>
+                <p>The Vevey lakeside restaurant is renowned since 1962 for its refined cuisine, breathtaking views, and exceptional wine cellar. The inventive menu changes with seasons and staff is professional. This upscale and luxurious dining experience is a must-visit for food connoisseurs and scenery lovers.</p>
+                <a href="#" onclick="openAboutLonger()">Longer story</a>
+                <img src="./images/gallery/short.jpg" alt="Two person in planning something in the stairs.">
             </article>
-            <article>
-                <div>
-                    <img src="./images/kitchen.jpg" alt="La Cuisine">
-                </div>
-                <div>
-                    <h2>Team</h2>
-                    <p>The team at the lakeside restaurant in Vevey is comprised of highly skilled and dedicated individuals. The head chef is a renowned culinary artist who is passionate about creating innovative dishes using the freshest, locally sourced ingredients. The service staff is attentive and knowledgeable, ensuring that each guest has a memorable dining experience. The sommelier expertly pairs wines with the menu, offering guests a truly elevated culinary experience. The team is dedicated to providing an exceptional dining experience, and it shows in the impeccable service and attention to detail that they provide.</p>
-                </div>
+            <article id="about-long" data-state="close">
+                <h2>The long story about us</h2>
+                <p>The lakeside restaurant in Vevey has a fascinating history. It was originally a small family-owned café that served coffee and pastries to locals and tourists. In 1962, the café was taken over by a talented chef who transformed it into the renowned establishment it is today. The chef was passionate about using only the freshest and highest quality ingredients, and this philosophy has been carried on by the restaurant's current head chef, who has won numerous awards for his innovative and delicious dishes.</p>
+                <p>In addition to its exceptional cuisine, the restaurant boasts a remarkable wine cellar that is said to be one of the finest in the region. The cellar contains rare and vintage wines from all over the world, and the sommelier is always on hand to offer expert advice and recommendations.</p>
+                <p>The restaurant's location on the shores of Lake Geneva provides breathtaking views of the surrounding mountains and water. The outdoor terrace is particularly popular in the summer months, offering a romantic and intimate setting for a memorable dining experience.</p>
+                <p>Despite its luxurious reputation, the restaurant remains committed to creating a welcoming and relaxed atmosphere for its guests. The staff is attentive and professional, always going the extra mile to ensure that diners have a truly exceptional experience.</p>
+                <p>Overall, the lakeside restaurant in Vevey is a true gem that has stood the test of time. It is a must-visit destination for anyone looking to indulge in refined cuisine, fine wine, and stunning scenery.</p>
+                <a href="#" id="about-long-close" onclick="closeAboutLonger()">Close</a>
             </article>
         </section>
+
         <section id="gallery-container">
             <div class="gallery-one">
                 <img src="./images/gallery/5.jpg" alt="Verre de vin">
@@ -87,7 +85,7 @@
                 <img src="./images/gallery/3.jpg" alt="Le livre du menu">
             </div>
             <div class="gallery-six">
-                <img src="./images/gallery/10.jpg" alt="La Bible, non j'deconne.">
+                <img src="./images/gallery/10.jpg" alt="La Bible du Restaurant.">
             </div>
             <div class="gallery-seven">
                 <img src="./images/gallery/4.jpg" alt="Une chaise à une table">
