@@ -31,6 +31,8 @@
 }
 #about-short p, #about-long p{
     font-family: "basic-sans", sans-serif;
+    text-align: justify;
+
 }
 #about-short a{
     font-family: "basic-sans", sans-serif;
@@ -140,10 +142,11 @@
         margin-top: 100px;
         flex-direction: row;
         justify-content: center;
-        gap: 50px;
+        gap: 100px;
     }
     #about-short, #about-long{
         max-width: 500px;
+        margin-top: 0px;
     }
     
     #about-long p{
@@ -233,6 +236,9 @@
     #gallery-container{
         margin: 0 auto;
         margin-top: 100px;
+    }
+    #about-short h2:after{
+        content: "The short story about us";
     }
 
 }
