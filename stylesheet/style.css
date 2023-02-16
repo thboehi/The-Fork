@@ -28,10 +28,16 @@ html {
 
 /* Pour que le texte sélectionné soit noir comme la couleur du site */
 ::selection {
-    background-color: #0A0908; /* Couleur de fond */
-    color: #F2F4F3; /* Couleur du texte */
-  }
+    background-color: #0A0908;
+    color: #F2F4F3;
+}
 
+/* Modification de toutes les images selon des règles voulues */
+img{
+  -webkit-user-drag: none;
+  user-select: none;
+  width: 100%;
+}
 
 /* ---------------------------------- FONT ---------------------------------- */
 
@@ -41,9 +47,8 @@ html {
 /*                                   MOBILE                                   */
 /* -------------------------------------------------------------------------- */
 
-
+/* Style sur la barre de navigation */
 body nav {
-    /*background-color: aqua;*/
     display: flex;
     height: 40px;
     justify-content: space-between;
@@ -52,24 +57,19 @@ body nav {
     max-width: 1560px;
     margin: 0 auto;
 }
-
+/* Titre du site */
 .menu-title{
     font-size: 2rem;
     font-family: bigmoore, serif;
     font-weight: 400;
     font-style: normal;
-    /* background-color: aquamarine; */
     transition: opacity 300ms ease-out;
 }
-
+/* Définition de la couleur pour éviter le bleu de base sur les liens */
 .menu-title a{
     color: #0A0908;
 }
-
-/*#underline{
-    display: none;
-}*/
-
+/* Boutons du menu */
 .menu-btn {
     display: flex;
     flex-direction: column;
@@ -83,23 +83,21 @@ body nav {
     padding: 0;
     z-index: 10;
 }
-
-
+/* Lignes pour le burger menu */
 .btn-line {
     width: 2rem;
     height: 0.25rem;
     background: #0A0908;
     border-radius: 10%;
 }
-
 .btn-line:nth-of-type(2){
     width: 1.7rem;
 }
-
+/* Cacher le menu en version mobile */
 .nav-menu {
     display: none;
 }
-
+/* Mise en page du hero */
 hero{
     display: flex;
     align-items: center;
@@ -123,7 +121,7 @@ hero #hero-container{
     flex-direction: column;
     text-align: center;
 }
-
+/* H1 utilisé une seule fois, dans le hero */
 h1{
     font-family: bigmoore, serif;
     color: #F2F4F3;
@@ -133,7 +131,6 @@ h1{
     text-transform: uppercase;
     transition: 300ms ease-out;
 }
-
 .hero-button{
     display: block;
     color: #F2F4F3;
@@ -144,26 +141,19 @@ h1{
     border: 2px solid #F2F4F3;
     transition: 300ms ease-out;
 }
-
 .hero-button p{
     font-family: basic-sans, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     font-style: normal;
 }
-
 .hero-button:hover{
     background-color: #F2F4F3;
     border: 2px solid #F2F4F3;
     transform: scale(1.02) translate(0, -2px);
 }
-
 .hero-button:hover p{
     color: #0A0908;
-}
-
-img{
-    width: 100%;
 }
 
 .main-container{
@@ -175,7 +165,7 @@ img{
     align-items: center;
     max-width: 1560px;
 }
-
+/* Marge de 100px avec la partie d'au dessus */
 section{
     margin-top: 100px;
 }
@@ -267,7 +257,7 @@ article div h3{
     flex-direction: column;
     gap: 30px;
 }
-
+/* Style pour le h2 qui est utilisée sur toutes les pages du site */
 h2{
     font-size: 2.5rem;
     font-family: basic-sans, sans-serif;
@@ -281,6 +271,7 @@ h2{
     text-transform: none;
 }
 
+/* Mise en page des reviews */
 .reviews-block{
     display: flex;
     width: fit-content;
@@ -344,7 +335,7 @@ h2{
     transform: translate(0, 50%);
 }
 
-
+/* Partenaires et des réseaux sociaux */
 #partners-container, #socials-container{
     display: flex;
     flex-direction: column;
@@ -390,6 +381,7 @@ h2{
     transform: scale(1.05) translate(0, -2px);
 }
 
+/* Footer... */
 footer{
     background-color: #5E503F;
 }
@@ -442,6 +434,8 @@ footer{
     transition: 300ms ease-in-out;
 }
 
+/* Bouton pour souscrire à la newsletter */
+
 #footer-subscribe{
     width: 100%;
     font-family: basic-sans, sans-serif;
@@ -462,7 +456,6 @@ footer{
     margin-top: 10px;
     display: flex;
 }
-
 
 form #subEmail{
     color: #F2F4F3;
@@ -533,7 +526,7 @@ form #subButton:focus{
     opacity: 1;
 }
 
-
+/* Cette partie est uniquement pour la configuration du burger menu et permet de limiter son utilisation sur les appareils ne faisant que 767px maximum. */
 @media screen and (max-width: 767px){
 
     html:has(.burger-nav-menu[data-state="open"]){
@@ -607,12 +600,12 @@ form #subButton:focus{
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px){
-
+    /* Rendre visible le menu */
     .nav-menu{
         display: flex;
         gap: 30px;
     }
-    
+    /* Changement des marges pour adapter un style tablette */
     body nav{
         padding: 30px 70px 30px 70px;
     }
@@ -626,6 +619,7 @@ form #subButton:focus{
         transition: color 300ms ease-out;
     }
 
+    /* Contrairement aux croyances, les tablettes peuvent avoir une souris. Il est donc intéressant d'ajouter les actions de hover sur ces derniers. */
     .nav-menu:hover #active:not(:hover){
         color: #0a090886;
     }
@@ -820,13 +814,6 @@ form #subButton:focus{
         margin-right: 50px;
     }
 
-
-    /* #second-article{
-        font-size: 1.4rem;
-        font-weight: 400;
-        max-width: 894px;
-
-    }*/
     #second-article{
         font-size: 1.4rem;
         border-radius: 0;
@@ -928,7 +915,9 @@ form #subButton:focus{
 /*                               MAX SIZE 1560px                              */
 /* -------------------------------------------------------------------------- */
 
+/* Cette partie défini les limites du site, c'est à dire 1560px, au delà de cette taille, le site ne change plus visuellement */
 @media screen and (min-width: 1560px){
+    /* Centre le contenu sur la page */
     .main-container{
         margin: 0 auto;
     }
@@ -954,7 +943,6 @@ form #subButton:focus{
         gap: 50px;
     }
 
-
     #footer-container{
         margin: 0 auto;
         margin-top: 100px;
@@ -965,7 +953,7 @@ form #subButton:focus{
 /* -------------------------------------------------------------------------- */
 /*                    MINI SCREEN (YES WE THOUGH ABOUT YOU)                   */
 /* -------------------------------------------------------------------------- */
-
+/* Cette partie inclu les utilisateurs d'appareils mobiles tout petit sur la page principale seulement. Cette fonction est en test et si beaucoup des visiteurs ont des appareils de cette taille, les autres pages pourront intégrer le même système. */
 @media screen and (max-width: 360px) {
     #partners-images{
         display: flex;
