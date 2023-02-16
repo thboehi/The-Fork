@@ -37,32 +37,6 @@ function subButtonOver() {
     }
   }
 
-
-  
-  
-//  fetch('../')
-//  let webhookLink = 
-//
-//  var request = new XMLHttpRequest();
-//  request.open("POST", "https://discord.");
-//  // again, replace the url in the open method with yours
-//  request.setRequestHeader('Content-type', 'application/json');
-//
-//  var myEmbed = {
-//    author: {
-//      name: "Captain Hook"
-//    },
-//    title: "✨ Un prout",
-//    description: "Email: " + email,
-//    color: hexToDecimal("#ffffff")
-//  }
-//
-//  var params = {
-//    username: "My Webhook Name",
-//    embeds: [ myEmbed ]
-//  }
-//
-//  request.send(JSON.stringify(params));
 }
 
 function hexToDecimal(hex) {
@@ -72,4 +46,12 @@ function hexToDecimal(hex) {
 function subButtonOut() {
   let text = "Subscribe";
   document.getElementById("subButton").setAttribute("value", text)
+}
+
+function openAboutLonger() {
+  document.getElementById("about-long").setAttribute("data-state", "open")
+}
+
+function closeAboutLonger() {
+  document.getElementById("about-long").setAttribute("data-state", "close")
 }
