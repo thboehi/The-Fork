@@ -543,7 +543,7 @@ form #subButton:focus{
     }
 
     .burger-nav-menu{
-        background: white;
+        background: var(--color-white);
         width: 100vw;
         top: 80px;
         left: 0;
@@ -574,7 +574,7 @@ form #subButton:focus{
         height: calc(100% - 80px);
     }
     .btn-line{
-        transition: translate 100ms ease-out 300ms, rotate 300ms ease-out, opacity 300ms ease-out 300ms;
+        transition: translate 300ms ease-out 300ms, rotate 300ms ease-out, opacity 300ms ease-out 300ms;
         transform-origin: center;
     }
 
@@ -583,7 +583,7 @@ form #subButton:focus{
         font-weight: 400;
     }
     .menu-btn[data-state="cross"] .btn-line{
-        transition: translate 100ms ease-out, rotate 300ms ease-out 300ms, opacity 0ms ease-out 300ms;
+        transition: translate 300ms ease-out, rotate 300ms ease-out 300ms, opacity 0ms ease-out 300ms;
     }
 
     .menu-btn[data-state="cross"] .btn-line:nth-child(2){
