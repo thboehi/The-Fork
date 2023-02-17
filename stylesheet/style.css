@@ -7,13 +7,19 @@
     margin: 0;
     padding: 0;
 }
+/* Définition des couleurs du site */
+:root{
+    --color-black: #0A0908;
+    --color-white: #F2F4F3;
+    --color-brown: #5E503F;
+}
 
 *:focus {
     outline: none;
 }
 html {
     scroll-behavior: smooth;
-    background-color: #F2F4F3;
+    background-color: var(--color-white);
 }
 
 /* Style de bouton principal */
@@ -28,8 +34,8 @@ html {
 
 /* Pour que le texte sélectionné soit noir comme la couleur du site */
 ::selection {
-    background-color: #0A0908;
-    color: #F2F4F3;
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 /* Modification de toutes les images selon des règles voulues */
@@ -67,7 +73,7 @@ body nav {
 }
 /* Définition de la couleur pour éviter le bleu de base sur les liens */
 .menu-title a{
-    color: #0A0908;
+    color: var(--color-black);
 }
 /* Boutons du menu */
 .menu-btn {
@@ -87,7 +93,7 @@ body nav {
 .btn-line {
     width: 2rem;
     height: 0.25rem;
-    background: #0A0908;
+    background: var(--color-black);
     border-radius: 10%;
 }
 .btn-line:nth-of-type(2){
@@ -124,7 +130,7 @@ hero #hero-container{
 /* H1 utilisé une seule fois, dans le hero */
 h1{
     font-family: bigmoore, serif;
-    color: #F2F4F3;
+    color: var(--color-white);
     font-weight: 400;
     font-style: normal;
     max-width: 365px;
@@ -133,12 +139,12 @@ h1{
 }
 .hero-button{
     display: block;
-    color: #F2F4F3;
-    background-color: #0A0908;
+    color: var(--color-white);
+    background-color: var(--color-black);
     width: fit-content;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
-    border: 2px solid #F2F4F3;
+    border: 2px solid var(--color-white);
     transition: 300ms ease-out;
 }
 .hero-button p{
@@ -148,12 +154,12 @@ h1{
     font-style: normal;
 }
 .hero-button:hover{
-    background-color: #F2F4F3;
-    border: 2px solid #F2F4F3;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
     transform: scale(1.02) translate(0, -2px);
 }
 .hero-button:hover p{
-    color: #0A0908;
+    color: var(--color-black);
 }
 
 .main-container{
@@ -172,7 +178,7 @@ section{
 
 .article-button{
     display: block;
-    background-color: #0A0908;
+    background-color: var(--color-black);
     width: fit-content;
     padding: 10px 40px 10px 40px;
     border-radius: 10px;
@@ -181,7 +187,7 @@ section{
 
 .article-button p{
     font-family: basic-sans, sans-serif;
-    color: #F2F4F3;
+    color: var(--color-white);
     font-size: 1rem;
     font-weight: 400;
     font-style: normal;
@@ -201,7 +207,7 @@ section{
 }
 
 #second-article{
-    background-color: #0a090810;
+    background-color: #0A090810;
     font-family: basic-sans, sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -211,8 +217,8 @@ section{
     padding: 100px 0;
     text-align: justify;
     margin-bottom: 100px;
-    border-left: 20px solid #0a090800;
-    border-right: 20px solid #0a090800;
+    border-left: 20px solid #0A090800;
+    border-right: 20px solid #0A090800;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,7 +306,7 @@ h2{
 }
 
 .review-text-container{
-    background-color: #0a090810;
+    background-color: #0A090810;
     padding: 50px 30px 30px 30px;
     display: flex;
     flex-direction: column;
@@ -328,7 +334,7 @@ h2{
     font-size: 9rem;
     font-weight: 900;
     font-style: normal;
-    color: #0a090810;
+    color: #0A090810;
     position: absolute;
     right: 15px;
     bottom: 50%;
@@ -383,7 +389,7 @@ h2{
 
 /* Footer... */
 footer{
-    background-color: #5E503F;
+    background-color: var(--color-brown);
 }
 
 #footer-container{
@@ -392,7 +398,7 @@ footer{
     padding-bottom: 30px;
     padding-top: 30px;
     height: fit-content;
-    background-color: #5E503F;
+    background-color: var(--color-brown);
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -413,7 +419,7 @@ footer{
 }
 
 .footer-link li ul a{
-    color: #F2F4F3;
+    color: var(--color-white);
     font-family: basic-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -439,14 +445,14 @@ footer{
 #footer-subscribe{
     width: 100%;
     font-family: basic-sans, sans-serif;
-    color: #F2F4F3;
+    color: var(--color-white);
     font-size: 1rem;
     font-weight: 300;
     width: auto;
 }
 
 #footer-subscribe > p:first-of-type{
-    color: #F2F4F3;
+    color: var(--color-white);
     font-weight: 600;
     font-style: normal;
     font-size: 1.4rem;
@@ -458,9 +464,9 @@ footer{
 }
 
 form #subEmail{
-    color: #F2F4F3;
-    background-color: #0A0908;
-    border: 3px solid #0A0908;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: 3px solid var(--color-black);
     border-right: none;
     font-family: basic-sans, sans-serif;
     font-size: 1rem;
@@ -472,23 +478,23 @@ form #subEmail{
 }
 
 form #subEmail:hover{
-    border: 3px solid #F2F4F3;
+    border: 3px solid var(--color-white);
     border-right: none;
 }
 
 form #subEmail:focus{
-    border: 3px solid #F2F4F3;
+    border: 3px solid var(--color-white);
     border-right: none;
 }
 
 form #subButton{
-    color: #0A0908;
+    color: var(--color-black);
     font-family: basic-sans, sans-serif;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 0 10px 10px 0;
     padding: 10px 20px 10px 20px;
-    border: 3px solid #F2F4F3;
+    border: 3px solid var(--color-white);
     border-left: none;
     cursor: pointer;
     transition: 300ms ease-out;
@@ -497,25 +503,25 @@ form #subButton{
 }
 
 form #subButton:hover{
-    background: #0A0908;
-    color: #F2F4F3;
-    border: 3px solid #0A0908;
+    background: var(--color-black);
+    color: var(--color-white);
+    border: 3px solid var(--color-black);
     border-left: none;
 }
 
 form #subButton[data-state="subEmailSelected"]:hover{
-    border: 3px solid #F2F4F3;
+    border: 3px solid var(--color-white);
     border-left: none;
 }
 
 form #subButton:focus{
-    border: 3px solid #0A0908;
+    border: 3px solid var(--color-black);
     border-left: none;
 }
 #copyright{
     font-family: "basic-sans", sans-serif;
     font-weight: 200;
-    color: #F2F4F3;
+    color: var(--color-white);
     text-align: left;
     box-sizing: border-box;
     padding-top: 10px;
@@ -557,7 +563,7 @@ form #subButton:focus{
         font-weight: 600;
         font-style: normal;
         text-transform: uppercase;
-        color: #0A0908;
+        color: var(--color-black);
     }
     .burger-nav-menu[data-state="close"]{
         height: 0px;
@@ -572,7 +578,7 @@ form #subButton:focus{
     }
 
     #active{
-        color: #0a090870;
+        color: #0A090870;
         font-weight: 400;
     }
     .menu-btn[data-state="cross"] .btn-line{
@@ -615,26 +621,26 @@ form #subButton:focus{
         font-size: 1rem;
         font-weight: 400;
         font-style: normal;
-        color: #0a090886;
+        color: #0A090886;
         transition: color 300ms ease-out;
     }
 
     /* Contrairement aux croyances, les tablettes peuvent avoir une souris. Il est donc intéressant d'ajouter les actions de hover sur ces derniers. */
     .nav-menu:hover #active:not(:hover){
-        color: #0a090886;
+        color: #0A090886;
     }
 
 
     .nav-menu li:hover a{
-        color: #0A0908;
+        color: var(--color-black);
     }
 
     .nav-menu li #active{
-        color: #0A0908;
+        color: var(--color-black);
     }
 
     .nav-menu:hover #active:not(:hover){
-        color: #0a090886;
+        color: #0A090886;
     }
 
     .nav-menu li{
@@ -642,16 +648,16 @@ form #subButton:focus{
     }
 
     #reserve-now-button{
-        background-color: #0a090818;
+        background-color: #0A090818;
         padding: 10px 20px 10px 20px;
         border-radius: 10px;
-        color: #0A0908;
+        color: var(--color-black);
         transition: background-color 300ms ease-out, color 300ms ease-out;
     }
 
     #reserve-now-button:hover {
-        background-color: #0A0908;
-        color: #F2F4F3;
+        background-color: var(--color-black);
+        color: var(--color-white);
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         transform: scale(1.02) translate(0, -2px);
     }
