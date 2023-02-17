@@ -120,3 +120,9 @@
 
 
 }
+
+@media screen and (min-width: 1560px) {
+    footer{
+        margin-top: 200px;
+    }
+}
