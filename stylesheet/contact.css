@@ -2,7 +2,6 @@
 
 @import url(./style.css);
 
-
 /* ---------------------------------- FONT ---------------------------------- */
 
 @import url("https://use.typekit.net/npp6ntg.css");
@@ -44,6 +43,7 @@
     padding: 5px;
     border-radius: 5px;
     font-family: "basic-sans", sans-serif;
+    background-color: var(--color-white);
 }
 #contact-form div textarea{
     resize: none;
@@ -54,8 +54,8 @@
     text-align: center;
     border-radius: 5px;
     border: none;
-    background-color: #0A0908;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-family: "basic-sans", sans-serif;
     align-self: flex-end;
 }
@@ -119,29 +119,4 @@
     }
 
 
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                               MAX SIZE 1560px                              */
-/* -------------------------------------------------------------------------- */
-
-@media screen and (min-width: 1560px){
-
-}
-
-
-/* -------------------------------------------------------------------------- */
-/*                    MINI SCREEN (YES WE THOUGH ABOUT YOU)                   */
-/* -------------------------------------------------------------------------- */
-
-@media screen and (max-width: 360px) {
-    
-    
-}
-
-@media screen and (max-width: 320px) {
-
-    
 }

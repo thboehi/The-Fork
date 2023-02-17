@@ -59,6 +59,7 @@
     padding: 5px;
     border-radius: 5px;
     font-family: "basic-sans", sans-serif;
+    background-color: var(--color-white);
 }
 #reserve-form div textarea{
     resize: none;
