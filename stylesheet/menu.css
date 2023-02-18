@@ -49,10 +49,18 @@ article{
 #menuListActive{
     opacity: 1;
 }
+.cardContainer{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
 
 .menuBoxes{
-    background-color: #F2F4F3;
-    margin: 10px 20px;
+    background-color: #e7e7e7;
+    margin: 20px;
     padding: 10px;
     border-radius: 10px;
     width: 90%;
@@ -103,22 +111,6 @@ article{
 /*                                  TABLETTE                                  */
 /* -------------------------------------------------------------------------- */
 
-@media screen and (min-width: 768px){
-
-    #reserve-now-button{
-        background-color: #0a090818;
-        padding: 10px 20px 10px 20px;
-        border-radius: 10px;
-        color: #0A0908;
-    }
-
-    #reserve-now-button:hover {
-        background-color: #0A0908;
-        color: #F2F4F3;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    }
-
-}
 
 
 
@@ -129,11 +121,7 @@ article{
 @media screen and (min-width: 1024px){
 
     .cardContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
 }
