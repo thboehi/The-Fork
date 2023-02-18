@@ -10,6 +10,9 @@ This website is for a fictional restaurant on the shores of Lake Geneva in Switz
 | Black | ![#0A0908](https://via.placeholder.com/10/0A0908?text=+) #0A0908 |
 | White | ![#F2F4F3](https://via.placeholder.com/10/F2F4F3?text=+) #F2F4F3 |
 
+## Demo
+https://thboehi.github.io/The-Fork
+
 ## Authors
 
 - [@thboehi](https://www.github.com/thboehi)
@@ -17,5 +20,3 @@ This website is for a fictional restaurant on the shores of Lake Geneva in Switz
 ## Screenshot
 
 ![Index screenshot](https://thboehi.github.io/The-Fork/images/readme.png)
-
-For more, go to https://thboehi.github.io/The-Fork
