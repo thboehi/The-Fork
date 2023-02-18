@@ -489,11 +489,13 @@ form #subEmail:focus{
 }
 
 form #subButton{
+    background-color: var(--color-white);
     color: var(--color-black);
     font-family: basic-sans, sans-serif;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 0 10px 10px 0;
+    border-top-left-radius: 0;
     padding: 10px 20px 10px 20px;
     border: 3px solid var(--color-white);
     border-left: none;
@@ -519,6 +521,7 @@ form #subButton:focus{
     border: 3px solid var(--color-black);
     border-left: none;
 }
+
 #copyright{
     font-family: "basic-sans", sans-serif;
     font-weight: 200;
