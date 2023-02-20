@@ -46,7 +46,7 @@ article{
     border-radius: 0 10px 10px 0;
 }
 
-#menuListActive{
+.menuList .menuListActive{
     opacity: 1;
 }
 .cardContainer{
