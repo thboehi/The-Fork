@@ -105,7 +105,7 @@ body nav {
     display: none;
 }
 /* Mise en page du hero */
-hero{
+#hero{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +118,7 @@ hero{
     margin: 0 auto;
 }
 
-hero #hero-container{
+#hero-container{
     display: flex;
     height: calc(100vh - 100px);
     padding: 20px;
@@ -419,24 +419,24 @@ footer{
     width: 40%;
 }
 
-.footer-link li ul a{
+.footer-link ul li a{
     color: var(--color-white);
     font-family: basic-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.footer-link li{
+.footer-link ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.footer-link li ul:first-of-type a{
+.footer-link ul li:first-of-type a{
     font-weight: 600;
 }
 
-.footer-link ul{
+.footer-link li{
     width: fit-content;
     transition: 300ms ease-in-out;
 }
@@ -746,7 +746,7 @@ form #subButton:focus{
         height: 40px;
     }
 
-    hero #hero-container{
+    #hero-container{
         align-items: center;
         height: 81vh;
     }
@@ -903,15 +903,15 @@ form #subButton:focus{
         width: 180px;
     }
 
-    #footer-link-container:has(ul:hover):hover ul:not(:hover, :first-of-type){
+    #footer-link-container:has(li:hover):hover li:not(:hover, :first-of-type){
         opacity: 0.5;
     }
     
-    .footer-link ul:hover:not(:first-of-type){
+    .footer-link li:hover:not(:first-of-type){
         transform: translate(10px);
     }
     
-    .footer-link ul:hover:not(:first-of-type) a::before{
+    .footer-link li:hover:not(:first-of-type) a::before{
         left: -10px;
         position: absolute;
         content: "> ";
@@ -938,7 +938,7 @@ form #subButton:focus{
         padding: 60px 0 60px 0;
     }
 
-    hero{
+    #hero{
         height: 88vh;
     }
 
@@ -983,7 +983,7 @@ form #subButton:focus{
 
 @media screen and (max-width: 320px) {
 
-    hero{
+    #hero{
         margin-top: 60px;
         height: 30px;
         background-image: none;
