@@ -29,28 +29,26 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <header>
-            <!-- ------------------------- Barre de navigation ------------------------- -->
-            <nav>
-                <div class="menu-title">
-                    <a href="index.html">The Fork</a>
+        <!-- ------------------------- Barre de navigation ------------------------- -->
+        <nav>
+            <div class="menu-title">
+                <a href="index.html">The Fork</a>
+            </div>
+            <div>
+                <div class="menu-btn" onclick="openBurgerMenu()" data-state="burger" id="burgerMenuButton">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
                 </div>
-                <div>
-                    <div class="menu-btn" onclick="openBurgerMenu()" data-state="burger" id="burgerMenuButton">
-                        <div class="btn-line"></div>
-                        <div class="btn-line"></div>
-                        <div class="btn-line"></div>
-                    </div>
-                    <ul class="nav-menu burger-nav-menu" data-state="close" id="menuLinks">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#" id="active">About us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="reserve.html" id="reserve-now-button">Reserve now</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                <ul class="nav-menu burger-nav-menu" data-state="close" id="menuLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#" class="active">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reserve.html" id="reserve-now-button">Reserve now</a></li>
+                </ul>
+            </div>
+        </nav>
         <!-- ------------------- Section story courte et longue -------------------- -->
         <section id="about-story-container">
             <article id="about-short">
@@ -61,11 +59,14 @@
             </article>
             <article id="about-long" data-state="close">
                 <h2>The long story about us</h2>
+                <p>You don't care.</p>
+                <!--
                 <p>The lakeside restaurant in Vevey has a fascinating history. It was originally a small family-owned café that served coffee and pastries to locals and tourists. In 1962, the café was taken over by a talented chef who transformed it into the renowned establishment it is today. The chef was passionate about using only the freshest and highest quality ingredients, and this philosophy has been carried on by the restaurant's current head chef, who has won numerous awards for his innovative and delicious dishes.</p>
                 <p>In addition to its exceptional cuisine, the restaurant boasts a remarkable wine cellar that is said to be one of the finest in the region. The cellar contains rare and vintage wines from all over the world, and the sommelier is always on hand to offer expert advice and recommendations.</p>
                 <p>The restaurant's location on the shores of Lake Geneva provides breathtaking views of the surrounding mountains and water. The outdoor terrace is particularly popular in the summer months, offering a romantic and intimate setting for a memorable dining experience.</p>
                 <p>Despite its luxurious reputation, the restaurant remains committed to creating a welcoming and relaxed atmosphere for its guests. The staff is attentive and professional, always going the extra mile to ensure that diners have a truly exceptional experience.</p>
                 <p>Overall, the lakeside restaurant in Vevey is a true gem that has stood the test of time. It is a must-visit destination for anyone looking to indulge in refined cuisine, fine wine, and stunning scenery.</p>
+                -->
                 <a href="#" id="about-long-close" onclick="closeAboutLonger()">Close</a>
             </article>
         </section>

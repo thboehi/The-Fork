@@ -56,6 +56,12 @@ img{
 
 /* Style sur la barre de navigation */
 body nav {
+    /* NEW STICKY HEADER*/
+    position: sticky;
+    top: 0; left: 0;
+    background-color: var(--color-white);
+    z-index: 200;
+    /* END NEW STICKY HEADER*/
     display: flex;
     height: 40px;
     justify-content: space-between;
@@ -583,9 +589,9 @@ form #subButton:focus{
         transform-origin: center;
     }
 
-    #active{
-        color: #0A090870;
-        font-weight: 400;
+    .active{
+        color: #0A090870 !important;
+        font-weight: 400 !important;
     }
     .menu-btn[data-state="cross"] .btn-line{
         transition: translate 300ms ease-out, rotate 300ms ease-out 300ms, opacity 0ms ease-out 300ms;
@@ -632,8 +638,8 @@ form #subButton:focus{
     }
 
     /* Contrairement aux croyances, les tablettes peuvent avoir une souris. Il est donc intéressant d'ajouter les actions de hover sur ces derniers. */
-    .nav-menu:hover #active:not(:hover){
-        color: #0A090886;
+    .nav-menu:hover .active:not(:hover){
+        color: #0A090886 !important;
     }
 
 
@@ -641,12 +647,12 @@ form #subButton:focus{
         color: var(--color-black);
     }
 
-    .nav-menu li #active{
-        color: var(--color-black);
+    .nav-menu li .active{
+        color: var(--color-black) !important;
     }
 
-    .nav-menu:hover #active:not(:hover){
-        color: #0A090886;
+    .nav-menu:hover .active:not(:hover){
+        color: #0A090886 !important;
     }
 
     .nav-menu li{
