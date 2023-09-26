@@ -30,25 +30,27 @@
     </head>
     <body>
         <!-- ------------------------- Barre de navigation ------------------------- -->
-        <nav>
-            <div class="menu-title">
-                <a href="index.html">The Fork</a>
-            </div>
-            <div>
-                <div class="menu-btn" onclick="openBurgerMenu()" data-state="burger" id="burgerMenuButton">
-                    <div class="btn-line"></div>
-                    <div class="btn-line"></div>
-                    <div class="btn-line"></div>
+        <div class="nav-container">
+            <nav>
+                <div class="menu-title">
+                    <a href="index.html">The Fork</a>
                 </div>
-                <ul class="nav-menu burger-nav-menu" data-state="close" id="menuLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="#" class="active">Contact</a></li>
-                    <li><a href="reserve.html" id="reserve-now-button">Reserve now</a></li>
-                </ul>
-            </div>
-        </nav>
+                <div>
+                    <div class="menu-btn" onclick="openBurgerMenu()" data-state="burger" id="burgerMenuButton">
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                    </div>
+                    <ul class="nav-menu burger-nav-menu" data-state="close" id="menuLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#" class="active">Contact</a></li>
+                        <li><a href="reserve.html" id="reserve-now-button">Reserve now</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         
         <!-- -------------------------- Carte de contact --------------------------- -->
         <div id="contact-card">

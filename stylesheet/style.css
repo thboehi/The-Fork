@@ -54,14 +54,19 @@ img{
 /*                                   MOBILE                                   */
 /* -------------------------------------------------------------------------- */
 
-/* Style sur la barre de navigation */
-body nav {
-    /* NEW STICKY HEADER*/
+/* NEW STICKY HEADER*/
+.nav-container {
     position: sticky;
     top: 0; left: 0;
     background-color: var(--color-white);
     z-index: 200;
-    /* END NEW STICKY HEADER*/
+    width: 100%;
+}
+/* END NEW STICKY HEADER*/
+
+/* Style sur la barre de navigation */
+body nav {
+    
     display: flex;
     height: 40px;
     justify-content: space-between;
