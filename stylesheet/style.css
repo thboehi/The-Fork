@@ -571,6 +571,7 @@ form #subButton:focus{
         overflow: hidden;
         transition: 300ms ease-out;
         z-index: 100;
+        overflow-y: auto;
     }
 
     .burger-nav-menu li a{
